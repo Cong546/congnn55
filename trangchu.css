@@ -1,0 +1,62 @@
+.lime{
+    display: flex;
+    
+}
+.t{
+    width: 550px;
+}
+.um{
+    display: flex;
+    
+}
+.um1{
+    width: 100%;
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+    justify-content: center;
+    background-color: #556B2F;
+    gap: 75px;
+}
+.m{
+    
+    width: 600px;
+}
+.blend{
+    display: flex;
+}
+.blend1{
+    width: 100%;
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+    justify-content: center;
+    background-color: #556B2F;
+  
+    font-size: 20px;
+}
+.a{
+    margin-left: 150px;
+    margin-right: 150px;
+}
+.v{
+    width: 650px;
+}
+.go{
+    display: flex;
+
+}
+.go1{
+    width: 100%;
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+    justify-content: center;
+    background-color: #556B2F;
+  
+    font-size: 20px;
+}
+.d{
+    margin-left: 140px;
+    margin-right: 140px;
+}
