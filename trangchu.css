@@ -7,6 +7,7 @@
 }
 .um{
     display: flex;
+    margin-bottom: 40px;
     
 }
 .um1{
@@ -24,6 +25,7 @@
 }
 .blend{
     display: flex;
+    margin-bottom: 40px;
 }
 .blend1{
     width: 100%;
@@ -31,13 +33,14 @@
     flex-direction: column ;
     align-items: center;
     justify-content: center;
-    background-color: #32462f;
+    background-color: #d1d1aa;
   
     font-size: 20px;
 }
 .a{
     margin-left: 150px;
     margin-right: 150px;
+    color: #32462F;
 }
 .v{
     width: 650px;
@@ -52,15 +55,22 @@
     flex-direction: column ;
     align-items: center;
     justify-content: center;
-    background-color: #32462f;
+    background-color: #006242;
   
     font-size: 20px;
 }
 .d{
-    margin-left: 140px;
-    margin-right: 140px;
-    
+    margin-left: 150px;
+    margin-right: 155px;
+    color: white;
+    font-size: 24px;
 }
 .m{
     width: 650px;
+}
+.x{
+    color: white;
+    margin-left: 200px;
+    margin-right: 250px;
+   font-size: 30px;
 }
