@@ -1,0 +1,42 @@
+.go3{
+    display: flex;
+}
+.f{
+    margin-left: 140px;
+    margin-right: 140px;
+    color: white;
+}
+.go2{
+    width: 100%;
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+    justify-content: center;
+    background-color: #32462f;
+
+    font-size: 20px;
+}
+.u{
+    width: 700px;
+}
+.b{
+    margin-left: 150px;
+    margin-right: 150px;
+    color: white;
+}
+.blend3{
+    display: flex;
+}
+.blend2{
+    width: 100%;
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+    justify-content: center;
+    background-color: #32462f;
+
+    font-size: 20px;
+}
+.m{
+    width: 700px;
+}
