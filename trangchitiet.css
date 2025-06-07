@@ -1,5 +1,6 @@
 .go3{
     display: flex;
+    margin-bottom: 40px;
 }
 .f{
     margin-left: 140px;
@@ -22,10 +23,11 @@
 .b{
     margin-left: 150px;
     margin-right: 150px;
-    color: white;
+    color: #32462f;
 }
 .blend3{
     display: flex;
+    margin-bottom: 40px;
 }
 .blend2{
     width: 100%;
@@ -33,10 +35,29 @@
     flex-direction: column ;
     align-items: center;
     justify-content: center;
-    background-color: #32462f;
+    background-color: #d1d1aa;
 
     font-size: 20px;
 }
 .m{
     width: 700px;
+}
+.j{
+    margin-left: 150px;
+    margin-right: 150px;
+    color: #32462f;
+}
+.go4{
+    width: 100%;
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+    justify-content: center;
+    background-color: #d1d1aa;
+
+    font-size: 20px;
+}
+.go5{
+    display: flex; 
+         
 }
