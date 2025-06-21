@@ -1,0 +1,253 @@
+/* Font chuẩn Starbucks */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+/* Reset & Tổng thể */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #f9f9f9;
+    color: #1e3932;
+    padding: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark Mode */
+body.dark {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+body.dark #product-idea {
+    background-color: #2e2e2e;
+}
+
+body.dark .money {
+    color: #4dd4a4;
+}
+
+body.dark .price {
+    color: #cccccc;
+}
+
+body.dark button {
+    background-color: #4dd4a4;
+    color: #1e1e1e;
+}
+
+body.dark .coffee-icon {
+    color: #4dd4a4;
+}
+
+/* Khung chi tiết sản phẩm */
+#product-idea {
+    max-width: 700px;
+    margin: 60px auto;
+    background: linear-gradient(to bottom right, #ffffff, #f0f0f0);
+    border: 1px solid #dcdcdc;
+    border-radius: 20px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+    padding: 40px 30px;
+    text-align: center;
+    position: relative;
+    animation: fadeIn 0.5s ease-in-out;
+    transition: all 0.3s ease;
+}
+
+/* Hiệu ứng mở */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Ảnh sản phẩm */
+.img {
+    width: 90%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 16px;
+    margin-bottom: 25px;
+    transition: transform 0.4s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.img:hover {
+    transform: scale(1.07);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Tên sản phẩm */
+.money {
+    font-size: 28px;
+    font-weight: 700;
+    color: #006241;
+    margin: 10px 0;
+}
+
+/* Giá */
+.price {
+    font-size: 20px;
+    color: #000000;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+/* Mô tả sản phẩm */
+.desc {
+    font-size: 17px;
+    color: #444;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+body.dark .desc {
+    color: #cccccc;
+}
+
+/* Nút mua */
+button {
+    background-color: #006241;
+    color: white;
+    padding: 14px 32px;
+    border: none;
+    border-radius: 999px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 15px rgba(0, 98, 65, 0.3);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #004f3b;
+    transform: scale(1.05);
+}
+
+/* Icon cà phê */
+.coffee-icon {
+    font-size: 40px;
+    color: #006241;
+    margin-bottom: 10px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    #product-idea {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .img {
+        max-width: 100%;
+    }
+
+    .money {
+        font-size: 22px;
+    }
+
+    .price {
+        font-size: 18px;
+    }
+
+    .desc {
+        font-size: 16px;
+    }
+
+    button {
+        width: 100%;
+        padding: 14px;
+        font-size: 16px;
+    }
+}
+.size-selector {
+    margin-bottom: 25px;
+    text-align: left;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    font-weight: bold;
+    color: #1e3932;
+}
+
+.sizes {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.sizes input[type="radio"] {
+    display: none;
+}
+
+.sizes label {
+    padding: 10px 18px;
+    border-radius: 30px;
+    border: 2px solid #006241;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-weight: 600;
+    color: #006241;
+}
+
+.sizes input[type="radio"]:checked + label {
+    background-color: #006241;
+    color: white;
+}
+
+body.dark .sizes label {
+    border-color: #4dd4a4;
+    color: #4dd4a4;
+}
+
+body.dark .sizes input[type="radio"]:checked + label {
+    background-color: #4dd4a4;
+    color: #1e1e1e;
+}
+.topping-selector,
+.note-section {
+    margin: 20px auto;
+    max-width: 300px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.toppings label {
+    display: block;
+    font-weight: normal;
+    margin-top: 5px;
+}
+
+textarea#note {
+    width: 100%;
+    height: 80px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 8px;
+    margin-top: 8px;
+    resize: vertical;
+    font-size: 14px;
+}
+
+#total-price {
+    font-weight: bold;
+    color: #006241;
+    font-size: 22px;
+}
+
+
+
+
+    
