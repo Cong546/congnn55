@@ -7,6 +7,45 @@
     <link rel="stylesheet" href="detail.css">
 </head>
 <body>
-    
+    <div id="product-idea" ></div>
+    <script type="module" src="detail.js" ></script> 
+<!-- Chọn size -->
+<div class="size-selector">
+    <label>Chọn size:</label>
+    <div class="sizes">
+      <input type="radio" name="size" value="Tall" id="size-tall" checked>
+      <label for="size-tall">Tall</label>
+  
+      <input type="radio" name="size" value="Grande" id="size-grande">
+      <label for="size-grande">Grande</label>
+  
+      <input type="radio" name="size" value="Venti" id="size-venti">
+      <label for="size-venti">Venti</label>
+    </div>
+  </div>
+  
+  <!-- Topping -->
+  <div class="topping-selector">
+    <label>Chọn Topping (+5.000 VNĐ mỗi loại):</label>
+    <div class="toppings">
+      <label><input type="checkbox" value="Kem"> Kem</label>
+      <label><input type="checkbox" value="Sữa đặc"> Sữa đặc</label>
+      <label><input type="checkbox" value="Caramel"> Caramel</label>
+    </div>
+  </div>
+  
+  <!-- Ghi chú -->
+  <div class="note-section">
+    <label>Ghi chú:</label>
+    <textarea id="note" placeholder="Ví dụ: Ít đá, thêm sữa..."></textarea>
+  </div>
+  
+  <!-- Giá tổng -->
+  <p class="price">Tổng giá: <span id="total-price">0</span> VNĐ</p>
+  
+  <!-- Nút mua -->
+  <button id="buy">Mua ngay</button>
+  
+      
 </body>
 </html>
