@@ -1,10 +1,28 @@
-.de{
-  margin-left: 400px;
-  margin-bottom: 40px;
+.ad{
+  margin-left:  450px;
+  margin-bottom: 80px;
   font-size: 50px;
-
 }
-.te{
-    margin-left: 400px;
-    border-radius: 60px;
+.le{
+  margin-left: 450px;
+  font-size: 40px;
+}
+.container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 10px;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.drink{
+  width: 200px;
+  border-radius:50% ;
+  
+}
+.product-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
