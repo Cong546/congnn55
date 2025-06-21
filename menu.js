@@ -43,9 +43,12 @@ async function displayProducts(){
         <img class="drink" src="${product.img}">
         <h2 class="name" >${product.name}</h2>
         <p class="price" ><strong>Price:</strong> ${product.price} VND</p>
+        <button class="detail">View Detial</button>
         </div>`;
-        productDiv.addEventListener("click", function (){
-            window.location.href =`../detail/detail.html?id=${product.id}`;
+
+        let btn = productDiv.querySelector('button')
+        btn.addEventListener("click", function (){
+            window.location.href =`detail.html?id=${product.id}`;
         }) 
         productList.appendChild(productDiv);
     })
