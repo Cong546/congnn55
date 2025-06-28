@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #d1d1aa;
+    background-color:  #CBA35C;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,7 +8,7 @@ body {
 }
 .signup-form {
     width: 30%;
-    background:  #d1d1aa   ;
+    background:  #CBA35C;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -20,15 +20,15 @@ body {
     width: 90%;
     padding: 10px;
     margin: 10px 0;
-    border: 1px solid   #d1d1aa;
+    border: 1px solid #ccc;
     border-radius: 5px;
 }
 .signup-form button {
     width: 100%;
     padding: 10px;
-    background: #d1d1aa;
+    background: #F8E1B7;
     border: none;
     border-radius: 5px;
-    color:  #d1d1aa;
+    color: #F0BB78;
     font-size: 16px;
 }

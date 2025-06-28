@@ -44,14 +44,23 @@ async function displayProducts(){
         <h2 class="name" >${product.name}</h2>
         <p class="price" ><strong>Price:</strong> ${product.price} VND</p>
         <button class="detail">View Detial</button>
+        <button class="detail">Delete</button>
         </div>`;
+        
 
         let btn = productDiv.querySelector('button')
         btn.addEventListener("click", function (){
             window.location.href =`detail.html?id=${product.id}`;
         }) 
         productList.appendChild(productDiv);
-    })
+    })  
 }
 
+
 displayProducts()
+async function detail(ItemsId){
+    await deleteDoc(doc(db, "Menu", ItemsId));
+    alert("Product deleted successfully");
+    window.location.reload();
+}
+
